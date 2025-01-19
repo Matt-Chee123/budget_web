@@ -13,9 +13,7 @@ function LoginPage() {
         e.preventDefault();
         try {
             const response = await axiosInstance.post("/users/login/", { username, password });
-            console.log(response);
             if (response.status === 200){
-                console.log("success");
                 navigate("/homepage");
             }
         } catch (error) {
