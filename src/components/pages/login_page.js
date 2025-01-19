@@ -6,12 +6,9 @@ function LoginPage() {
     let [error, setError] = useState("");
 
     const handleLogin = async  (e) => {
-        console.log("login");
         e.preventDefault();
-        console.log(e)
         try {
             const response = await axiosInstance.post("/users/login/", { username, password });
-            console.log(response);
         } catch (error) {
             setError('Login failed');
         }
