@@ -1,14 +1,16 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-//navbar component
 import AppRouter from "./config/app_routing"
+import { AxiosProvider } from './contexts/axiosContext';  // Import AxiosProvider
 
 
 function App() {
   return (
+    <AxiosProvider>
     <BrowserRouter>
       <AppRouter />
     </BrowserRouter>
+    </AxiosProvider>
   );
 }
 

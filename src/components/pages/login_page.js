@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import Axios from "axios";
 
 function LoginPage() {
+    let [username, setUsername] = useState("");
+    let [password, setPassword] = useState("");
+    let [error, setError] = useState("");
+
     return (
         <>
             {/*
@@ -11,8 +16,7 @@ function LoginPage() {
         <body class="h-full">
         ```
       */}
-            <div className="container h-full">
-            <div className="flex flex-1 h-full flex-col justify-center px-6 py-12 lg:px-8">
+            <div className="flex flex-1 flex-col justify-center px-6 py-12 lg:px-8 align-baseline mt-20">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight">
                         Sign in to your account
@@ -70,7 +74,6 @@ function LoginPage() {
                         </div>
                     </form>
                 </div>
-            </div>
             </div>
         </>
     )
