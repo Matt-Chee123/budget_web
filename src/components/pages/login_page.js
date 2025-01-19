@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import axiosInstance from '../../config/axios';
+import { useNavigate } from "react-router-dom";
+
+
 function LoginPage() {
+    const navigate = useNavigate();
     let [username, setUsername] = useState("");
     let [password, setPassword] = useState("");
     let [error, setError] = useState("");
@@ -9,6 +13,11 @@ function LoginPage() {
         e.preventDefault();
         try {
             const response = await axiosInstance.post("/users/login/", { username, password });
+            console.log(response);
+            if (response.status === 200){
+                console.log("success");
+                navigate("/homepage");
+            }
         } catch (error) {
             setError('Login failed');
         }

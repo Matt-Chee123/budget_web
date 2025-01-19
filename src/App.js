@@ -5,7 +5,6 @@ import AppRouter from "./config/app_routing"
 
 function App() {
   return (
-
     <BrowserRouter>
       <AppRouter />
     </BrowserRouter>
