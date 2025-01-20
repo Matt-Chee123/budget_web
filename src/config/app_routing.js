@@ -8,7 +8,6 @@ function AppRouter() {
     const location = useLocation();
     const showNavBar = location.pathname !== '/login';
     return (
-        <div>
         <Routes>
             <Route path="/login" element={<LoginPage />} />
 
@@ -16,7 +15,6 @@ function AppRouter() {
             <Route path="/homepage" element={<HomePage />} />
             </Route>
         </Routes>
-        </div>
     )
 }
 

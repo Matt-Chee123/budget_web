@@ -4,4 +4,6 @@
 
 html {
     @apply bg-gray-950 text-white;
+    @apply overflow-hidden;
+
 }
