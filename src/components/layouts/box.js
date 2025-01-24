@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Box(props) {
+function Box({children}) {
     return (
-        <div className="h-full w-full bg-gray-800 rounded-lg"></div>
+        <div className="h-full w-full bg-gray-800 rounded-lg">
+            {children}
+        </div>
     )
 }
 
