@@ -7,10 +7,11 @@ function TopIncomes(){
 
     const retrieve_top_incomes = async () => {
         try {
-            const response = await axiosInstance.get("/incomes/record")
+            const response = await axiosInstance.get("/incomes/record/", { withCredentials: true });
             console.log(response);
         } catch(error){
             console.log(error);
+            
         }
     }
 
