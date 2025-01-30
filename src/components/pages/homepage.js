@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axiosInstance from '../../config/axios';
 import Box from '../layouts/box';
-import top_incomes from '../charts/top_incomes';
-import TopIncomes from "../charts/top_incomes";
+import top_incomes from '../charts/income';
+import TopIncomes from "../charts/income";
 
 function HomePage() {
     return (
