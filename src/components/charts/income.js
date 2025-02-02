@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import axiosInstance from '../../config/axios';
 
-
 function TopIncomes(){
     let [income, setIncome] = useState(null);
     let [loading, setLoading] = useState(true);

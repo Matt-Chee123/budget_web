@@ -3,6 +3,7 @@ import axiosInstance from '../../config/axios';
 import Box from '../layouts/box';
 import top_incomes from '../charts/income';
 import TopIncomes from "../charts/income";
+import UserAccounts from '../charts/user_accounts';
 
 function HomePage() {
     return (
@@ -30,7 +31,9 @@ function HomePage() {
                                 </Box>
                             </div>
                             <div className="basis-1/3 top-0 pe-3 pb-20">
-                                <Box></Box>
+                                <Box>
+                                    <UserAccounts />
+                                </Box>
                             </div>
                             <div className="basis-1/3 top-0 pe-3 pb-20">
                                 <Box></Box>
