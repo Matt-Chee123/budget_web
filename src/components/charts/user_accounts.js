@@ -23,7 +23,7 @@ function UserAccounts(){
             </div>
             <div className="flex-col h-3/4 p-3">
                 {accounts.map((account, index) => (
-                    <div key={index} className="p-3">{account.account_name} - {account.total}</div>
+                    <div key={index} className="p-3  justify-center">{account.account_name} - {account.total}</div>
                 ))}
             </div>
         </div>

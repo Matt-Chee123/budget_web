@@ -20,10 +20,12 @@ function TopIncomes(){
         retrieve_total_incomes();
     },[])
     return (
-        <div className="flex flex-col p-10">
-            <div className="flex flex-row justify-center">
-                <h2>Total Income - </h2>
-                <div>{income}</div>
+        <div>
+            <div className="flex h-1/4 w-full justify-center p-3">
+                <h2>Incomes</h2>
+            </div>
+            <div className="flex-col h-3/4 p-3">
+                <div className="p-3 justify-center">Total Income - {income}</div>
             </div>
         </div>
 
