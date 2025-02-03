@@ -28,17 +28,8 @@ function BankAccounts() {
                     <div className="h-1/2 p-3 pl-0">
                         <Box></Box>
                     </div>
-                    <div className="h-1/2">
-                        <div className="flex flex-row h-full">
-                            <div className="basis-1/2 top-0 p-3 pt-0 pl-0 pb-20">
-                                <Box>
-                                </Box>
-                            </div>
-                            <div className="basis-1/2 p-3 pt-0 pl-0 pb-20">
-                                <Box>
-                                </Box>
-                            </div>
-                        </div>
+                    <div className="h-1/2 pl-0 pb-20">
+                        <Box></Box>
                     </div>
                 </div>
             </div>
