@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import axiosInstance from '../../config/axios';
 import Box from '../layouts/box';
-import TopIncomes from "../charts/income";
-import UserAccounts from "../charts/user_accounts";
+import AccountSelection from '../charts/b_account_selector'
 
 
 function BankAccounts() {
@@ -12,7 +10,9 @@ function BankAccounts() {
                 <div className="flex-col h-full">
                     <div className="flex flex-row h-1/3">
                         <div className="w-1/2 h-full p-3 pr-0">
-                            <Box></Box>
+                            <Box>
+                                <AccountSelection />
+                            </Box>
                         </div>
                         <div className="w-1/2 h-full p-3">
                             <Box></Box>
