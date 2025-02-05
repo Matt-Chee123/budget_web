@@ -8,11 +8,12 @@ const useBankStore = create((set) => ({
     fetchAccounts: async () => {
         try {
             const response = await axiosInstance.get(`/accounts/all`, { withCredentials: true });
-            set({ accounts: response.data.accounts });
+            console.log(response);
+            set({ accounts: response.data });
         } catch (error) {
             console.error("Error fetching accounts:", error);
         }
     },
 }));
-
+window.BankStore = useBankStore;
 export default useBankStore;

@@ -6,6 +6,7 @@ function AccountSelection() {
 
     useEffect(() => {
         fetchAccounts();
+        console.log(accounts);
     }, [fetchAccounts]);
 
     return (
