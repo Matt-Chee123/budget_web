@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Box from '../layouts/box';
-import AccountSelection from '../charts/b_account_selector'
-
+import AccountSelection from '../charts/b_account_selector';
+import TotalBalance from '../charts/b_account_total_income';
 
 function BankAccounts() {
     return (
@@ -15,7 +15,9 @@ function BankAccounts() {
                             </Box>
                         </div>
                         <div className="w-1/2 h-full p-3">
-                            <Box></Box>
+                            <Box>
+                                <TotalBalance />
+                            </Box>
                         </div>
                     </div>
                     <div className="h-2/3 p-3 pt-0 pb-20">
