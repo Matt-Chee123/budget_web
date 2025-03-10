@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 const navigation = [
     { name: 'Homepage', href: '/homepage' },
     { name: 'Bank Accounts', href: '/bankAccounts' },
+    { name: 'Investments', href: '/investments' },
 ];
 
 function classNames(...classes) {
